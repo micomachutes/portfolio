@@ -1,0 +1,131 @@
+.project-details {
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.project-title {
+    color: #2d1832;
+    text-shadow: 2px 2px #ff00ff;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-description {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #00ff00;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.project-description p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+.project-gallery {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.gallery-container {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #ff00ff;
+    padding: 1rem;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gallery-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+}
+
+.gallery-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.gallery-prev,
+.gallery-next {
+    background: none;
+    border: 2px solid #ff00ff;
+    color: #2d1832;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    transition: all 0.3s ease;
+}
+
+.gallery-prev:hover,
+.gallery-next:hover {
+    background-color: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.project-links {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.project-link-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: none;
+    border: 2px solid #00ff00;
+    color: #2d1832;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-link-button:hover {
+    background-color: #00ff00;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        padding: 1.5rem;
+    }
+
+    .gallery-container {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 1.2rem;
+    }
+
+    .project-description p {
+        font-size: 0.7rem;
+    }
+
+    .gallery-container {
+        min-height: 200px;
+    }
+
+    .project-link-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.7rem;
+    }
+}
